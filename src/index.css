@@ -146,3 +146,96 @@ input[type="checkbox"] {
 .actions select:hover {
   background-color: #fbe4a4;
 }
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 6rem;
+    word-spacing: 20px;
+    letter-spacing: -3px;
+    padding: 2rem 0;
+  }
+
+  .add-form {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem 1rem;
+  }
+
+  .add-form h3 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .list ul {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+    word-spacing: 10px;
+    letter-spacing: -2px;
+  }
+
+  .add-form {
+    padding: 1.6rem 1rem;
+  }
+
+  .list {
+    padding: 2rem 1rem;
+  }
+
+  .list ul {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    width: 95%;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .actions button,
+  .list select {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+    word-spacing: 5px;
+    letter-spacing: -1px;
+  }
+
+  button,
+  select,
+  input {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .add-form h3 {
+    font-size: 2rem;
+  }
+
+  .stats {
+    padding: 2rem 1rem;
+    font-size: 1.6rem;
+  }
+
+  .list ul {
+    grid-template-columns: 1fr;
+  }
+}
